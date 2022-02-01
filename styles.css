@@ -15,16 +15,21 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   font-family: "Roboto", sans-serif;
+  z-index: 1;
 }
 
 .right-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   background-color: #f8fafb;
 }
 
 .left-container {
-  background-color: rgb(209, 209, 209);
+  background: url(img/water.jpeg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .logo-bar {
@@ -33,15 +38,27 @@ h1 {
   align-items: center;
   gap: 20px;
   position: relative;
-  top: 140px;
-  height: 100px;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  top: 134px;
+  height: 120px;
+  background-color: hsla(0, 0%, 0%, 0.7);
   color: #ffffff;
   text-align: center;
 }
 
 .logo-bar:first-child {
   font-size: 1.5rem;
+}
+
+.credit {
+  font-size: 0.8rem;
+  color: #ffffff;
+  position: absolute;
+  bottom: 3px;
+}
+
+.credit a {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .description {
@@ -55,15 +72,16 @@ h1 {
   width: 75%;
   font-size: 1.2rem;
 }
-
+.form-container {
+  flex-grow: 1;
+}
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 2;
   background-color: #ffffff;
-  box-shadow: 1px 4px 5px #e2e2e2;
-  padding: 50px;
+  box-shadow: 1px 4px 2px #e2e2e2;
+  padding: 10px 50px;
 }
 
 .form-title {
@@ -80,7 +98,7 @@ input {
   padding: 2px;
   font-size: 1rem;
   border: none;
-  box-shadow: 1px 1px 4px #888888;
+  box-shadow: 1px 1px 3px #c2c2c2;
   border-radius: 4px;
 }
 
@@ -97,16 +115,17 @@ input {
 .submit-container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   align-items: flex-start;
   padding: 20px 50px;
+  height: 100%;
 }
 
 .submit-container button {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   padding: 10px 40px;
-  background-color: #586d48;
+  background-color: #6d99b1;
   border-radius: 7px;
   color: #fff;
   border: none;
@@ -123,7 +142,50 @@ input {
   margin-top: 30px;
 }
 
-.login {
-  color: #586d48;
+a {
+  color: #6d99b1;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 940px) {
+  .main {
+    height: 100%;
+    grid-template-columns: 1fr;
+  }
+  .logo-bar {
+    position: static;
+    height: 100%;
+  }
+
+  .left-container {
+    height: 40vh;
+  }
+
+  .description {
+    justify-content: center;
+  }
+
+  .form {
+    align-items: center;
+  }
+  .submit-container {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .dummy-text {
+    align-self: center;
+    font-size: 1.5rem;
+  }
+  .form-inputs {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .submit-container {
+    height: 100%;
+  }
 }
