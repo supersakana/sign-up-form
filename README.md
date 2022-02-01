@@ -1,1 +1,3 @@
-Single page sign up form to demonstrate my HTML and CSS skills.
+Single page sign up form to practice HTML & CSS. 
+
+Live preview: https://supersakana.github.io/sign-up-form/
