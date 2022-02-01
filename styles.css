@@ -41,3 +41,49 @@ h1 {
 .logo-bar:first-child {
   font-size: 1.5rem;
 }
+
+.description {
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.dummy-text {
+  width: 75%;
+}
+
+.form-container {
+  background-color: aquamarine;
+  height: 40vh;
+  display: flex;
+
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 30px;
+  /* width: 80%; */
+}
+
+.form-title {
+  margin-bottom: 10px;
+}
+
+.form-inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.left-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-inputs {
+  display: flex;
+  flex-direction: column;
+}

@@ -20,16 +20,45 @@
 
         <div class="right-container">
             <div class="description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum mollitia iusto! Aliquam, esse iste quasi commodi rem consequuntur provident vitae rerum, sint sequi error non dignissimos. Est, quas quaerat.</p>
+                <p class="dummy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum mollitia iusto! Aliquam, esse iste quasi commodi rem consequuntur provident vitae rerum, sint sequi error non dignissimos. Est, quas quaerat.</p>
             </div>
 
-            <form class="form" action="#">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName">
+            <div class="form-container">
+                <form class="form" action="#">
+                    <div class="form-title">
+                        <h2>Let's do this!</h2>
+                    </div>
+                    <div class="form-inputs">
+                        <div class="left-inputs">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName">
 
-            </form>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="right-inputs">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName">
+
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone">
+
+                            <label for="passwordConfirm">Confirm Password</label>
+                            <input type="password" name="passwordConfirm" id="passwordConfirm">
+                        </div>
+                    </div>
+                </form>
+             </div>
+
+             <div class="submit-container">
+                 <button>Create Account</button>
+             </div>
+
+
         </div>
-
     </section>
 </body>
 </html>
